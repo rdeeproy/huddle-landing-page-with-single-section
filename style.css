@@ -14,9 +14,11 @@ body{
   min-height: 100vh;
   
   
+  
 }
 
 nav{
+  max-width: 1400px;
   
   margin-top: 2rem;
   margin-bottom: 3rem;
@@ -79,9 +81,7 @@ button:hover{
 }
 footer{
   text-align: center;
-   margin-top: 3rem;
- 
- 
+  
 }
 
 .icon{
@@ -109,25 +109,25 @@ footer{
 
 body{
   background-image: url(images/bg-desktop.svg);
-  background-size:cover;
+  background-size:contain;
 
 }
+
 
 
 
 main{
   
-  max-width:1200px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: start;
+  max-width:1600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: start;
   
   
   
 }
 .image-wrapper{
-    flex:1.2; 
+    flex:1; 
 }
 .content-wrapper{
   flex: 1;
@@ -154,7 +154,7 @@ button{
 footer{
   text-align: right;
   padding-right: 4rem;
-  margin-top: 0;
+  
 }
 
 
